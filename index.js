@@ -7,8 +7,8 @@ const rl = readline.createInterface({
 });
 
 function promptUser() {
-  rl.question('Enter a command (add/update/delete/display/exit): ', (command) => {
-    switch (command) {
+  rl.question('Enter a action (add/update/delete/display/exit): ', (action) => {
+    switch (action) {
       case 'add':
         rl.question('Enter the task: ', (task) => {
           todo.addTask(task);
